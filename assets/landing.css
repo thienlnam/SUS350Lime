@@ -209,7 +209,7 @@ button:hover {
 }
 
 .feature-img {
-  margin-top: 60px;
+  margin-top: 150px;
   width: 50%;
   max-height: 500px;
   background: url("https://curiocity.com/toronto/wp-content/uploads/2019/05/57799301_2182220458520663_3309583831391556157_n.jpg") no-repeat center center;
@@ -217,7 +217,7 @@ button:hover {
 
 .feature-img2 {
   width: 50%;
-  margin-top: 30px;
+  margin-top: 150px;
   height: 500px;
   background: url("https://intoglobal.com/media/273319/osu-hero.jpg") no-repeat top right;
   background-size: cover;
@@ -225,6 +225,7 @@ button:hover {
 
 .feature-img3 {
   width: 50%;
+  margin-top: 80px;
   height: 500px;
   background: url("https://corvallis.objects.liquidweb.services/photos/corvallisoregon-Header.jpg") no-repeat top right;
   background-size: cover;
@@ -324,7 +325,6 @@ button:hover {
 }
 
   .jumbotron {
-    padding-top: 300px!important;
     text-align: center;
     background-color: transparent;
   }
