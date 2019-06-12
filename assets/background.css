@@ -1,0 +1,89 @@
+.wrapper {
+    position: relative;
+    background-color: #2d253a;
+  }
+  
+  /*Gradient Sky*/
+  .horizon {
+    height: 100vh;
+    z-index: 0;
+    background-image: linear-gradient(
+      -180deg,
+      #092d6c 0,
+      #10659c 20%,
+      #7babbf 40%,
+      #e9c39f 65%,
+      #ff9a4a 100%
+    );
+  }
+  
+  /*Mountains in the middle*/
+  .mountains {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 500;
+    height: 300px;
+    width: 100vw;
+    background-image: url('https://www.mozilla.org/media/img/firefox/horizon/mountains-no-path.1668781e6f21.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  /*Frontfacing ground/hill*/
+  .foreground {
+    z-index: 500;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 250px;
+    width: 100vw;
+    background-image: url('https://www.mozilla.org/media/img/firefox/horizon/foreground.9d87fe44d0ee.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  /*Left Treeline*/
+  .tree-left {
+    z-index: 1000;
+    position: absolute;
+    height: 400px;
+    width: 30vw;
+    bottom: 4vw;
+    left: -14px;
+    background-image: url(https://www.mozilla.org/media/img/firefox/horizon/trees-left.49c342783046.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  /*Right Treeline*/
+  .tree-right {
+    z-index: 1000;
+    position: absolute;
+    height: 400px;
+    width: 30vw;
+    bottom: 3vw;
+    right: 14px;
+    background-image: url('https://www.mozilla.org/media/img/firefox/horizon/trees-right.2a7e11264e33.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  /*Pathway*/
+  .path {
+    z-index: 1000;
+    position: absolute;
+    height: 79px;
+    width: 34vw;
+    bottom: 5vw;
+    right: 56px;
+    background-image: url(https://www.mozilla.org/media/img/firefox/horizon/pathway-stones.b73cac385072.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+  

@@ -1,0 +1,203 @@
+.spotlight {
+    display: block;
+    margin: 60px auto;
+    max-width: 1140px;
+  }
+  .spotlight h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 20px;
+    padding: 0;
+    display: block;
+  }
+  .spotlight p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 0 20px;
+    padding: 0;
+  }
+  .spotlight .flex-row {
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    -webkit-box-flex: 0;
+    flex: 0 1 auto;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .spotlight .flex-row .col-sm-2 {
+    padding-left: 0;
+  }
+  .spotlight .flex-row .col-sm-2 .team-tabs {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .spotlight .flex-row .col-sm-2 .team-tabs img {
+    box-shadow: 1px 1px 2px #e1e7ea;
+    opacity: 0.5;
+  }
+  .spotlight .flex-row .col-sm-2 .team-tabs img:hover {
+    opacity: 1;
+  }
+  .spotlight .flex-row .col-sm-2 .team-tabs li {
+    height: 163px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  .spotlight .flex-row .col-sm-2 .team-tabs li:last-child {
+    padding-bottom: 0;
+  }
+  .spotlight .flex-row .col-sm-2 .team-tabs li.active img {
+    opacity: 1;
+  }
+  .spotlight .flex-row .dept-wrap {
+    border: 1px solid #e1e7ea;
+    box-shadow: 1px 1px 2px #e1e7ea;
+  }
+  .spotlight .flex-row .dept-wrap .member-spotlight {
+    margin-bottom: -4px;
+  }
+  .spotlight .flex-row .dept-wrap .member-spotlight .headshot {
+    background-color: #DBDCDE;
+    background-position: top center;
+    background-size: cover;
+    height: 507px;
+    display: inline-block;
+    width: 50%;
+  }
+  .spotlight .flex-row .dept-wrap .member-spotlight .headshot.thien {
+    background-image: url("../img/thienphoto.jpg");
+  }
+  .spotlight .flex-row .dept-wrap .member-spotlight .headshot.suzi {
+    background-image: url("https://s30.postimg.org/ddfqkjrkh/monica_large.png");
+  }
+  .spotlight .flex-row .dept-wrap .member-spotlight .headshot.emma {
+    background-image: url("https://s30.postimg.org/piaf1stgx/rachel_large.png");
+  }
+  .spotlight .flex-row .dept-wrap .member-spotlight .headshot.jacob {
+    background-image: url("https://s30.postimg.org/piaf1stgx/rachel_large.png");
+  }
+  .spotlight .flex-row .dept-wrap .member-spotlight .headshot.kurtis {
+    background-image: url("https://s30.postimg.org/piaf1stgx/rachel_large.png");
+  }
+  .spotlight .flex-row .dept-wrap .member-spotlight .headshot.tanner {
+    background-image: url("https://s30.postimg.org/piaf1stgx/rachel_large.png");
+  }
+
+
+
+  .spotlight .flex-row .dept-wrap .member-spotlight .member-content {
+    display: inline-block;
+    padding: 20px;
+    vertical-align: top;
+    width: 45%;
+  }
+  .spotlight .flex-row .dept-wrap .member-spotlight .member-content p.question {
+    font-weight: 800;
+    margin-bottom: 0;
+  }
+  .spotlight .flex-row .dept-wrap .member-spotlight .member-content p:last-child {
+    margin-bottom: 0;
+  }
+  .spotlight .flex-row .dept-wrap .member-spotlight .member-content a {
+    color: #2E7AD1;
+    font-weight: initial;
+  }
+  .spotlight .flex-row .dept-wrap .member-spotlight .member-content a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 600px) {
+    .spotlight .team-tabs li {
+      height: auto;
+      margin: 0 !important;
+      width: 32.5%;
+    }
+    .spotlight .team-tabs li img {
+      width: 100%;
+    }
+  }
+  @media (max-width: 975px) {
+    .spotlight .flex-row .col-sm-2 {
+      flex-basis: 100%;
+      max-width: none;
+    }
+    .spotlight .flex-row .col-sm-2 .team-tabs {
+      padding: 10px 0 0 10px;
+      position: absolute;
+    }
+    .spotlight .flex-row .col-sm-2 .team-tabs li {
+      height: auto;
+      margin: 0;
+      padding-bottom: 0;
+      width: 100px;
+    }
+    .spotlight .flex-row .col-sm-2 .team-tabs li img {
+      height: 90px;
+      width: auto;
+    }
+    .spotlight .flex-row .col-sm-10 {
+      flex-basis: 100%;
+      max-width: none;
+      padding: 0;
+    }
+  }
+  @media (max-width: 1045px) {
+    .spotlight .flex-row .col-sm-10 .headshot {
+      max-height: 300px;
+      width: 100% !important;
+    }
+    .spotlight .flex-row .dept-wrap .member-spotlight .member-content {
+      width: 90%;
+    }
+  }
+  @media (max-width: 1120px) and (min-width: 1045px) {
+    .spotlight .flex-row .dept-wrap .member-spotlight .headshot {
+      width: 45%;
+    }
+    .spotlight .flex-row .dept-wrap .member-spotlight .member-content {
+      width: 49%;
+    }
+  }
+  /* Inherit Flexbox Queries */
+  @media only screen and (min-width: 48em) {
+    .col-sm-2,
+    .col-sm-10 {
+      box-sizing: border-box;
+      -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+      -webkit-box-flex: 0;
+      flex: 0 0 auto;
+      padding-right: 1rem;
+      padding-left: 1rem;
+    }
+  }
+  @media only screen and (min-width: 48em) {
+    .col-sm-2 {
+      -ms-flex-preferred-size: 16.667%;
+      -webkit-flex-basis: 16.667%;
+      flex-basis: 16.667%;
+      max-width: 16.667%;
+    }
+  
+    .col-sm-10 {
+      -ms-flex-preferred-size: 83.333%;
+      -webkit-flex-basis: 83.333%;
+      flex-basis: 83.333%;
+      max-width: 83.333%;
+    }
+  }
+  
